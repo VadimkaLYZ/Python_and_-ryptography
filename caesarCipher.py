@@ -27,8 +27,9 @@ for symbol in message:
             translatedIndex = symbolIndex + key
         elif mode == 'decrypt':
             translatedIndex = symbolIndex - key
-        # Опрацювати "завертання", якщо необхідно
 
+
+        # Опрацювати "завертання", якщо необхідно
         if translatedIndex >= len(SYMBOLS):
             translatedIndex = translatedIndex - len(SYMBOLS)
         elif translatedIndex < 0:
